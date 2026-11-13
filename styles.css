@@ -1,11 +1,236 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
 }
 
 .container {
-    margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
+
+
+/* The header */
+
+header {
+    background-color: white;
+}
+
+header .container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+}
+
+header a {
+    text-decoration: none;
+    color: #6b7280;
+}
+
+header a:hover {
+    color: #5A67D8;
+}
+
+
+/* Section: overview hero */
+
+main .overview-hero {
+    background-color: #E2E8F0;
+}
+
+main .overview-hero .container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+main .overview-hero .container img {
+    border-radius: 10px;
+}
+
+main .overview-hero .container .overview-hero-text {
+    flex: 1;
+}
+
+
+/* The card part */
+
+main .learn-about {
+    background-color: white;
+}
+
+main .learn-about .container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+main .learn-about .container h2 {
+    margin: 0 0 1rem;
+    font-size: 24px;
+    color: #48BB78;
+}
+
+main .learn-about .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+main .learn-about .card {
+    background-color: lightgray;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 10px;
+    border-color: #E2E8F0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main .learn-about .card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 21px;
+    color: #48BB78;
+}
+
+main .learn-about .card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Learn more */
+
+main .testing {
+    background-color: #4A5568;
+    padding: 4.5rem 0;
+}
+
+main .testing .container {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+main .testing .container .cta {
+    margin-left: auto;       
+    flex: 0 0 auto;
+    background-color: #48BB78;
+}
+
+main .testing .container .cta a {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Stories */
+
+main .stories {
+    background-color: white;
+}
+
+main .stories .container article {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+main .stories .container h2 {
+    color:#5A67D8;
+}
+
+main .stories .container .article-body h3 {
+    
+    font-size: 18px;
+     
+}
+
+main .stories .container .article-body p a { 
+    color: #5A67D8;
+}
+
+main .stories .container article img {
+   border-radius: 50%;
+}
+
+/* The newsletter */
+
+main .newsletter {
+    background-color: #48BB78;
+    color: white;
+    padding: 3.5rem 0;
+}
+
+main .newsletter button {
+    background-color:#5A67D8;
+}
+
+main .newsletter .container h3 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main .newsletter .container p {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main .newsletter .container form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main .newsletter .container .message {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* The footer */
+
+footer {
+    background-color: #4A5568;
+    color: white;
+    padding: 1.5rem 0;   
+}
+
+footer .container {
+    text-align: center;
+}
+
+
+
+
+
